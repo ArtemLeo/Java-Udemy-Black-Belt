@@ -52,7 +52,7 @@ class Employee implements Comparable<Employee> {
     }
 }
 
-class IdComparator implements Comparator<Employee> {   // Сравниваем по "id";
+class IdComparator implements Comparator<Employee> {   // РЎСЂР°РІРЅРёРІР°РµРј РїРѕ "id";
 
     @Override
     public int compare(Employee emp1, Employee emp2) {
@@ -63,19 +63,18 @@ class IdComparator implements Comparator<Employee> {   // Сравниваем по "id";
         } else {
             return 1;
         }
-        // Альтернатива if: return Integer.compare(emp1.id, emp2.id);
+        // РђР»СЊС‚РµСЂРЅР°С‚РёРІР° if: return Integer.compare(emp1.id, emp2.id);
     }
 }
 
-
-class NameComparator implements Comparator<Employee> {  // Сравнение по "name";
+class NameComparator implements Comparator<Employee> {  // РЎСЂР°РІРЅРµРЅРёРµ РїРѕ "name";
     @Override
     public int compare(Employee emp1, Employee emp2) {
         return emp1.name.compareTo(emp2.name);
     }
 }
 
-class SalaryComparator implements Comparator<Employee> {  // Сравнение по "salary";
+class SalaryComparator implements Comparator<Employee> {  // РЎСЂР°РІРЅРµРЅРёРµ РїРѕ "salary";
     @Override
     public int compare(Employee emp1, Employee emp2) {
         return emp1.salary - emp2.salary;
