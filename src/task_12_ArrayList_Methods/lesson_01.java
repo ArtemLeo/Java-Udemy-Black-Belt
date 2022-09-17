@@ -11,32 +11,32 @@ public class lesson_01 {
         arrayList1.add("Anna");
         arrayList1.add("Den");
 
-        // add index
-        arrayList1.add(1, "Max");  // Добавление через Index;
+        // add index - РґРѕР±Р°РІР»РµРЅРёРµ С‡РµСЂРµР· Index;
+        arrayList1.add(1, "Max"); 
 
-        System.out.println(arrayList1); // or
+        System.out.println(arrayList1); 
         for (String x : arrayList1) {
             System.out.print(x + " ");
         }
         System.out.println(" ");
 
         // get
-        System.out.println(arrayList1.get(2)); // or
+        System.out.println(arrayList1.get(2));
         for (String s : arrayList1) {
             System.out.print(s + " ");
         }
         System.out.println(" ");
 
-        for (int i = 0; i < arrayList1.size(); i++) { // or
+        for (int i = 0; i < arrayList1.size(); i++) {
             System.out.print(arrayList1.get(i) + " ");
         }
         System.out.println(" ");
 
-        // set (замана)
+        // set (Р·Р°РјР°РЅР°)
         arrayList1.set(2,"Anton");
         System.out.println(arrayList1);
 
-        // remove (удаление)
+        // remove (СѓРґР°Р»РµРЅРёРµ)
         arrayList1.remove(2);
         System.out.println(arrayList1);
     }
