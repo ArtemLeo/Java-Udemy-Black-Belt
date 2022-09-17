@@ -20,7 +20,6 @@ public class lesson_01 {
 
 }
 
-
 class Employee implements Comparable<Employee> {
     int id;
     String name;
@@ -67,7 +66,6 @@ class Employee implements Comparable<Employee> {
         result = this.surname.compareTo(anotherEmp.surname);
         }
         return result;
-
         */
     }
 }
