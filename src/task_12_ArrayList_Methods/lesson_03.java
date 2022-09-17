@@ -17,16 +17,16 @@ public class lesson_03 {
         arrayList2.add("???");
         System.out.println(arrayList2);
 
-        // addAll
-        arrayList1.addAll(arrayList2); // Добавление All в конец массива;
-        arrayList1.addAll(1, arrayList2); // Добавление по индексу;
+        // addAll;
+        arrayList1.addAll(arrayList2);     // Р”РѕР±Р°РІР»РµРЅРёРµ All РІ РєРѕРЅРµС† РјР°СЃСЃРёРІР°;
+        arrayList1.addAll(1, arrayList2);  // Р”РѕР±Р°РІР»РµРЅРёРµ РїРѕ РёРЅРґРµРєСЃСѓ;
         System.out.println(arrayList1);
 
-        // clear
+        // clear;
         arrayList1.clear();
         System.out.println(arrayList1);
 
-        // indexOf принимает в параметры объект и возвращает его позицию. Если не найден, то возвращает -1;
+        // indexOf РїСЂРёРЅРёРјР°РµС‚ РІ РїР°СЂР°РјРµС‚СЂС‹ РѕР±СЉРµРєС‚ Рё РІРѕР·РІСЂР°С‰Р°РµС‚ РµРіРѕ РїРѕР·РёС†РёСЋ. Р•СЃР»Рё РЅРµ РЅР°Р№РґРµРЅ, С‚Рѕ РІРѕР·РІСЂР°С‰Р°РµС‚ -1;
         ArrayList<String> arrayList3 = new ArrayList<>();
         arrayList3.add("Tom");
         arrayList3.add("Anna");
@@ -34,32 +34,32 @@ public class lesson_03 {
         int index = arrayList3.indexOf("Tom");
         System.out.println(index);
 
-        // contains (поиск элементов в массиве);
+        // contains (РїРѕРёСЃРє СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ);
         System.out.println(arrayList3.contains("Anna"));
 
-        // size (сколько елементов в массиве);
+        // size (СЃРєРѕР»СЊРєРѕ РµР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ);
         System.out.println(arrayList3.size());
 
-        // isEmpty (содержит ли массив элементы);
+        // isEmpty (СЃРѕРґРµСЂР¶РёС‚ Р»Рё РјР°СЃСЃРёРІ СЌР»РµРјРµРЅС‚С‹);
         System.out.println(arrayList3.isEmpty());
 
-        // removeAll (Удалит все повторяющиеся элементы, в указанном массиве)
+        // removeAll (РЈРґР°Р»РёС‚ РІСЃРµ РїРѕРІС‚РѕСЂСЏСЋС‰РёРµСЃСЏ СЌР»РµРјРµРЅС‚С‹, РІ СѓРєР°Р·Р°РЅРЅРѕРј РјР°СЃСЃРёРІРµ);
         arrayList1.removeAll(arrayList2);
         System.out.println(arrayList1);
 
-        // retainAll (Оставит все повторяющиеся элементы, в указанном массиве)
+        // retainAll (РћСЃС‚Р°РІРёС‚ РІСЃРµ РїРѕРІС‚РѕСЂСЏСЋС‰РёРµСЃСЏ СЌР»РµРјРµРЅС‚С‹, РІ СѓРєР°Р·Р°РЅРЅРѕРј РјР°СЃСЃРёРІРµ);
         arrayList1.retainAll(arrayList2);
         System.out.println(arrayList1);
 
-        // containsAll ("содержит все")
+        // containsAll ("СЃРѕРґРµСЂР¶РёС‚ РІСЃРµ");
         boolean result = arrayList1.containsAll(arrayList2);
         System.out.println(result);
 
-        // subList (фрагмент массива; с 1-го элемента по 2-й НЕ включительно);
+        // subList (С„СЂР°РіРјРµРЅС‚ РјР°СЃСЃРёРІР°; СЃ 1-РіРѕ СЌР»РµРјРµРЅС‚Р° РїРѕ 2-Р№ РќР• РІРєР»СЋС‡РёС‚РµР»СЊРЅРѕ);
         List<String> myList = arrayList2.subList(0, 2);
         System.out.println(myList);
 
-        // toArray
+        // toArray;
         Object[] array = arrayList1.toArray();
         for (Object j : array) {
             System.out.print(j + " ");
@@ -70,14 +70,12 @@ public class lesson_03 {
         }
         System.out.println(" ");
 
-        // List.of (List изменять НЕЛЬЗЯ);
+        // List.of (List РёР·РјРµРЅСЏС‚СЊ РќР•Р›Р¬Р—РЇ);
         List<Integer> list1 = List.of(3, 8, 13);
         System.out.println(list1);
 
-        // List.copyOf (List изменять НЕЛЬЗЯ);
+        // List.copyOf (List РёР·РјРµРЅСЏС‚СЊ РќР•Р›Р¬Р—РЇ);
         List<String> list2 = List.copyOf(arrayList1);
         System.out.println(list2);
-
-
     }
 }
