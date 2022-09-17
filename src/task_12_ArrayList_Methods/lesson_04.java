@@ -10,12 +10,12 @@ public class lesson_04 {
         StringBuilder sb3 = new StringBuilder("C");
         StringBuilder sb4 = new StringBuilder("D");
 
-        // asList (получаем ArrayList из массива, которые будут связаны);
+        // asList (РїРѕР»СѓС‡Р°РµРј ArrayList РёР· РјР°СЃСЃРёРІР°, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ СЃРІСЏР·Р°РЅС‹);
         StringBuilder[] array = {sb1, sb2, sb3, sb4};
         List <StringBuilder> list = Arrays.asList(array);
         System.out.println(list);
 
-        // append (добавление к элементу, по индексу);
+        // append (РґРѕР±Р°РІР»РµРЅРёРµ Рє СЌР»РµРјРµРЅС‚Сѓ, РїРѕ РёРЅРґРµРєСЃСѓ);
         array[0].append("!!!");
         System.out.println(list);
     }
