@@ -11,15 +11,14 @@ public class lesson_01 {
         arrayList1.add("Den");
         System.out.println(arrayList1);
 
-        ArrayList<String> arrayList2 = new ArrayList<>(200); // Capacity - вместимость ArrayList;
+        ArrayList<String> arrayList2 = new ArrayList<>(200); // Capacity - РІРјРµСЃС‚РёРјРѕСЃС‚СЊ ArrayList;
         arrayList2.add("Tom");
         arrayList2.add("Anna");
-        System.out.println(arrayList2.size()); // Size - текущий размер ArrayList;
+        System.out.println(arrayList2.size()); // Size - С‚РµРєСѓС‰РёР№ СЂР°Р·РјРµСЂ ArrayList;
 
-        List<String> arrayList3 = new ArrayList<>(); // Создание по иерархии - от List;
+        List<String> arrayList3 = new ArrayList<>(); // РЎРѕР·РґР°РЅРёРµ РїРѕ РёРµСЂР°СЂС…РёРё - РѕС‚ List;
 
-        List<String> arrayList4 = new ArrayList<>(arrayList1); // За элементы принимается другой ArrayList;
-        System.out.println(arrayList4);                        // Создаётся новый ArrayList;
-
+        List<String> arrayList4 = new ArrayList<>(arrayList1); // Р—Р° СЌР»РµРјРµРЅС‚С‹ РїСЂРёРЅРёРјР°РµС‚СЃСЏ РґСЂСѓРіРѕР№ ArrayList. РЎРѕР·РґР°С‘С‚СЃСЏ РЅРѕРІС‹Р№ ArrayList;
+        System.out.println(arrayList4);                       
     }
 }
