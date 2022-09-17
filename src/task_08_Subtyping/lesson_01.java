@@ -6,10 +6,10 @@ import java.util.List;
 public class lesson_01 {
     public static void main(String[] args) {
 
-        // Создание объекта через родительский класс;
+        // РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° С‡РµСЂРµР· СЂРѕРґРёС‚РµР»СЊСЃРєРёР№ РєР»Р°СЃСЃ;
         X x = new Y();
 
-        // Для Generics эта возможность отсутствует - будет ошибка;
+        // Р”Р»СЏ Generics СЌС‚Р° РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚ - Р±СѓРґРµС‚ РѕС€РёР±РєР°;
         // List<X> list = new ArrayList<>(Y);
     }
 }
@@ -20,7 +20,7 @@ class X {
 class Y extends X {
 }
 
-// Ограничения для значения Placeholder <T extends Number>;
+// РћРіСЂР°РЅРёС‡РµРЅРёСЏ РґР»СЏ Р·РЅР°С‡РµРЅРёСЏ Placeholder <T extends Number>;
 
 class Info<T extends Number> {
     private T value;
@@ -39,7 +39,7 @@ class Info<T extends Number> {
     }
 }
 
-// Для параметризированных методов, ограничения тоже работают;
+// Р”Р»СЏ РїР°СЂР°РјРµС‚СЂРёР·РёСЂРѕРІР°РЅРЅС‹С… РјРµС‚РѕРґРѕРІ, РѕРіСЂР°РЅРёС‡РµРЅРёСЏ С‚РѕР¶Рµ СЂР°Р±РѕС‚Р°СЋС‚;
 
 class GenMethod {
     public static <T extends Number> T getSecondElement(ArrayList<T> arrayList) {
@@ -47,5 +47,5 @@ class GenMethod {
     }
 }
 
-// Имплементацию интерфейсов в параметризированные классы, добавляем через "&";
+// РРјРїР»РµРјРµРЅС‚Р°С†РёСЋ РёРЅС‚РµСЂС„РµР№СЃРѕРІ РІ РїР°СЂР°РјРµС‚СЂРёР·РёСЂРѕРІР°РЅРЅС‹Рµ РєР»Р°СЃСЃС‹, РґРѕР±Р°РІР»СЏРµРј С‡РµСЂРµР· "&";
 // class Info<T extends Number&Interface1&Interface2>
