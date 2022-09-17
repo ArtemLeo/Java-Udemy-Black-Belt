@@ -6,12 +6,10 @@ public class lesson_01 {
         System.out.println(info1);
         String s = info1.getValue();
 
-
         Info<Integer> info2 = new Info<>(18);
         System.out.println(info2);
         Integer i = info2.getValue();
     }
-
 }
 
 class Info<T> {
