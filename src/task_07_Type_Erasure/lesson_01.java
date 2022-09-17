@@ -9,12 +9,15 @@ public class lesson_01 {
             return value;
         }
     }
-    // Информация о Generics стирается, поэтому оба метода ниже для JVM выглядят одинаково;
-    // typeErasure (Info info);
+    
+    /* 
+    РРЅС„РѕСЂРјР°С†РёСЏ Рѕ Generics СЃС‚РёСЂР°РµС‚СЃСЏ, РїРѕСЌС‚РѕРјСѓ РѕР±Р° РјРµС‚РѕРґР° РЅРёР¶Рµ РґР»СЏ JVM РІС‹РіР»СЏРґСЏС‚ РѕРґРёРЅР°РєРѕРІРѕ;
+    typeErasure (Info info);
 
-    // public void typeErasure(Info<String> info) {
-    // String s = info.getValue();
-    // }
+    public void typeErasure(Info<String> info) {
+    String s = info.getValue();
+    }
+    */
 
 
     public void typeErasure(Info<Integer> info) {
@@ -27,11 +30,13 @@ public class lesson_01 {
         }
     }
 
-    // Наследование подобных методов при наследовании - приводит к ошибке;
+    // РќР°СЃР»РµРґРѕРІР°РЅРёРµ РїРѕРґРѕР±РЅС‹С… РјРµС‚РѕРґРѕРІ - РїСЂРёРІРѕРґРёС‚ Рє РѕС€РёР±РєРµ;
 
     class Child extends Parent {
-        // public void typeErasure(Info<Integer> info) {
-        // Integer i = info.getValue();
-        // }
+        /*
+        public void typeErasure(Info<Integer> info) {
+        Integer i = info.getValue();
+        }
+        */
     }
 }
