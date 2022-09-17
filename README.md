@@ -1,5 +1,5 @@
 <h1 align="center">Java-Udemy-Black-Belt is an online course for those who are learning Java 🖐👨‍💻</h1>
-<h3 align="center">C🇺</h3>
+<h3 align="center">for those who are learning Java🖐👨‍💻</h3>
 
 
 # Java-Udemy-Black-Belt
