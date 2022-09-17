@@ -14,7 +14,7 @@ public class Team <T extends Participant>{
 
     public void addNewParticipant(T participant) {
         participants.add(participant);
-        System.out.println("В команду " + name + " был добавлен новый учасник " + participant.getName());
+        System.out.println("Р’ РєРѕРјР°РЅРґСѓ " + name + " Р±С‹Р» РґРѕР±Р°РІР»РµРЅ РЅРѕРІС‹Р№ СѓС‡Р°СЃРЅРёРє " + participant.getName());
     }
 
     public void playWith(Team<T> team) {
@@ -26,6 +26,6 @@ public class Team <T extends Participant>{
         } else {
             winnerName = team.name;
         }
-        System.out.println("Победила команда " + winnerName);
+        System.out.println("РџРѕР±РµРґРёР»Р° РєРѕРјР°РЅРґР° " + winnerName);
     }
 }
