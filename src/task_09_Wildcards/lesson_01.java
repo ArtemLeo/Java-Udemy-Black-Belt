@@ -6,13 +6,13 @@ import java.util.List;
 public class lesson_01 {
     public static void main(String[] args) {
 
-        // List<?> list = new ArrayList<>(); где <?> = Wildcard;
+        // List<?> list = new ArrayList<>(); РіРґРµ <?> = Wildcard;
 
-        // При использовании Wildcard, нельзя использовать методы, которые изменяют наш объект: list.add("Hello");
+        // РџСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё Wildcard, РЅРµР»СЊР·СЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјРµС‚РѕРґС‹, РєРѕС‚РѕСЂС‹Рµ РёР·РјРµРЅСЏСЋС‚ РЅР°С€ РѕР±СЉРµРєС‚: list.add("Hello");
 
-        // Использование границ для Wildcard: List<? extends Number> listName = new ArrayList<Integer>();
+        // РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РіСЂР°РЅРёС† РґР»СЏ Wildcard: List<? extends Number> listName = new ArrayList<Integer>();
 
-        // Использование границ до суперкласса для Number: List<? super Number> listName = new ArrayList<Object>();
+        // РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РіСЂР°РЅРёС† РґРѕ СЃСѓРїРµСЂРєР»Р°СЃСЃР° РґР»СЏ Number: List<? super Number> listName = new ArrayList<Object>();
 
         List<Double> list = new ArrayList<>();
         list.add(3.14);
@@ -37,11 +37,10 @@ public class lesson_01 {
         list3.add(32);
         list3.add(38);
         System.out.println(sum(list3));
-
     }
 
     static void showListInfo(List<?> list) {
-        System.out.println("Мой лист содержит следующие элементы: " + list);
+        System.out.println("РњРѕР№ Р»РёСЃС‚ СЃРѕРґРµСЂР¶РёС‚ СЃР»РµРґСѓСЋС‰РёРµ СЌР»РµРјРµРЅС‚С‹: " + list);
     }
 
     public static double sum(ArrayList<? extends Number> arrayList) {
