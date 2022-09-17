@@ -22,7 +22,6 @@ public class lesson_02 {
         studentList.remove(st6);
         System.out.println(studentList);
     }
-
 }
 
 class Student {
