@@ -12,7 +12,7 @@ public class lesson_01 {
 
         Iterator<String> iterator = arrayList1.iterator();
 
-        // Iterator (вывод на экран)
+        // Iterator (РІС‹РІРѕРґ РЅР° СЌРєСЂР°РЅ);
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
