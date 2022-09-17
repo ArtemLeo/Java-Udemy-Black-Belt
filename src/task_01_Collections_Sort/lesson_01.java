@@ -15,8 +15,5 @@ public class lesson_01 {
         Collections.sort(list);
         System.out.println("After sort");
         System.out.println(list);
-
-
-
     }
 }
