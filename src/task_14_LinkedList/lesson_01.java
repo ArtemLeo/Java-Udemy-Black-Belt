@@ -27,7 +27,6 @@ public class lesson_01 {
 
         studentLinkedList.remove(3);
         System.out.println("LinkedList = " + studentLinkedList);
-
     }
 }
 
