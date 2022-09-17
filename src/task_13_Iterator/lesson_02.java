@@ -12,7 +12,7 @@ public class lesson_02 {
 
         Iterator<String> iterator = arrayList1.iterator();
 
-        // Iterator (удаление элемента)
+        // Iterator (СѓРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°);
         while (iterator.hasNext()) {
             iterator.next();
             iterator.remove();
