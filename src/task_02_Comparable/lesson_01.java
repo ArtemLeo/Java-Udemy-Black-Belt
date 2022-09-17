@@ -51,17 +51,16 @@ class Employee implements Comparable<Employee> {
             return 1;
         }
 
-
         /*
-        - Короткий способ для "compareTo" для int;
+        - РљРѕСЂРѕС‚РєРёР№ СЃРїРѕСЃРѕР± РґР»СЏ "compareTo" РґР»СЏ int;
 
         return this.id-anotherEmp.id;
 
-        - Короткий способ для "compareTo" для String;
+        - РљРѕСЂРѕС‚РєРёР№ СЃРїРѕСЃРѕР± РґР»СЏ "compareTo" РґР»СЏ String;
 
         return this.name.compareTo(anotherEmp.name)
 
-        - Если имена совпадают и нужно + проверка по фамилии;
+        - Р•СЃР»Рё РёРјРµРЅР° СЃРѕРІРїР°РґР°СЋС‚, С‚Рѕ + РїСЂРѕРІРµСЂРєР° РїРѕ С„Р°РјРёР»РёРё;
 
         int result = this.name.compareTo(anotherEmp.name);
         if(result==0) {
