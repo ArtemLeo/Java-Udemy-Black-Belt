@@ -20,16 +20,16 @@ public class lesson_01 {
         Collections.sort(arrayList);
         System.out.println(arrayList);
 
-        // Поиск элемента через Collections.binarySearch;
+        // РџРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° С‡РµСЂРµР· Collections.binarySearch;
         int index = Collections.binarySearch(arrayList, 12);
         System.out.println(index);
-        // Если число в массиве не найдено, то выведется отрицательное число (например "-9");
+        // Р•СЃР»Рё С‡РёСЃР»Рѕ РІ РјР°СЃСЃРёРІРµ РЅРµ РЅР°Р№РґРµРЅРѕ, С‚Рѕ РІС‹РІРµРґРµС‚СЃСЏ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ (РЅР°РїСЂРёРјРµСЂ "-9");
 
-        // Метод reverse;
+        // РњРµС‚РѕРґ reverse;
         Collections.reverse(arrayList);
         System.out.println(arrayList);
 
-        // Перемешивание (shuffle);
+        // РџРµСЂРµРјРµС€РёРІР°РЅРёРµ (shuffle);
         Collections.shuffle(arrayList);
         System.out.println(arrayList);
     }
