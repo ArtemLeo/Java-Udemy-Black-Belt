@@ -18,16 +18,16 @@ public class lesson_02 {
         priorityQueue.add(st5);
         System.out.println(priorityQueue);
 
-        // poll - удаляет элементы. При отсутствии эмементов в priorityQueue - возвращает null (НЕ выбрасывает ошибку);
+        // poll - СѓРґР°Р»СЏРµС‚ СЌР»РµРјРµРЅС‚С‹. РџСЂРё РѕС‚СЃСѓС‚СЃС‚РІРёРё СЌРјРµРјРµРЅС‚РѕРІ РІ priorityQueue - РІРѕР·РІСЂР°С‰Р°РµС‚ null (РќР• РІС‹Р±СЂР°СЃС‹РІР°РµС‚ РѕС€РёР±РєСѓ);
         System.out.println(priorityQueue.poll());
         System.out.println(priorityQueue.poll());
         System.out.println(priorityQueue.poll());
         System.out.println(priorityQueue.poll());
         System.out.println(priorityQueue.poll());
         System.out.println(priorityQueue.poll());
-
     }
 }
+
 class Student implements Comparable<Student> {
     String name;
     int course;
