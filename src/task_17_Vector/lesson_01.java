@@ -14,6 +14,5 @@ public class lesson_01 {
         vector.remove(2);
         System.out.println(vector);
         System.out.println(vector.get(1));
-
     }
 }
