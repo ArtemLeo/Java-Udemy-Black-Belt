@@ -17,33 +17,30 @@ public class lesson_01 {
 
         Student st4 = new Student("Tom", "SurName1", 3);
 
-        // Сравнение в map (поиск одинаковых ключей) через containsKey;
+        // РЎСЂР°РІРЅРµРЅРёРµ РІ map (РїРѕРёСЃРє РѕРґРёРЅР°РєРѕРІС‹С… РєР»СЋС‡РµР№) С‡РµСЂРµР· containsKey;
         boolean result = map.containsKey(st4);
         System.out.println("result = " + result);
 
-        // Сравнение двух элементов через equals;
+        // РЎСЂР°РІРЅРµРЅРёРµ РґРІСѓС… СЌР»РµРјРµРЅС‚РѕРІ С‡РµСЂРµР· equals;
         System.out.println(st1.equals(st4));
 
         Student st5 = new Student("Igor", "SurName5", 3);
 
-        // У одинаковых объектов = одинаковый hashcode;
+        // РЈ РѕРґРёРЅР°РєРѕРІС‹С… РѕР±СЉРµРєС‚РѕРІ = РѕРґРёРЅР°РєРѕРІС‹Р№ hashcode;
         System.out.println(st1.hashCode());
         System.out.println(st4.hashCode());
         System.out.println(st2.hashCode());
         System.out.println(st5.hashCode());
-        // st2.hashCode и st5.hashCode = 15; (происходит) Коллизия - объекты разные, а hashCode одинаковый;
+        // st2.hashCode Рё st5.hashCode = 15; (РїСЂРѕРёСЃС…РѕРґРёС‚) РљРѕР»Р»РёР·РёСЏ - РѕР±СЉРµРєС‚С‹ СЂР°Р·РЅС‹Рµ, Р° hashCode РѕРґРёРЅР°РєРѕРІС‹Р№;
 
-        // entrySet - вывод ключей и значений;
+        // entrySet - РІС‹РІРѕРґ РєР»СЋС‡РµР№ Рё Р·РЅР°С‡РµРЅРёР№;
         for (Map.Entry<Student, Double> entry : map.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }
 
-        // Начальные параметры (Initial capacity - начальный размер массива + Load factor - коэффициент заполненности массива (после размер будет увечиличен в двое);
+        // РќР°С‡Р°Р»СЊРЅС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ (Initial capacity - РЅР°С‡Р°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР° + Load factor - РєРѕСЌС„С„РёС†РёРµРЅС‚ Р·Р°РїРѕР»РЅРµРЅРЅРѕСЃС‚Рё РјР°СЃСЃРёРІР° (РїРѕСЃР»Рµ СЂР°Р·РјРµСЂ Р±СѓРґРµС‚ СѓРІРµС‡РёР»РёС‡РµРЅ РІ РґРІРѕРµ);
         Map<Integer, String> map2 = new HashMap<>(16, 0.75f);
-
     }
-
-
 }
 
 final class Student {
@@ -74,10 +71,10 @@ final class Student {
         return course == student.course && Objects.equals(name, student.name) && Objects.equals(surname, student.surname);
     }
 
-    // При помощи hashCode происходит преобразование любого объекта в int;
+    // РџСЂРё РїРѕРјРѕС‰Рё hashCode РїСЂРѕРёСЃС…РѕРґРёС‚ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ Р»СЋР±РѕРіРѕ РѕР±СЉРµРєС‚Р° РІ int;
     @Override
     public int hashCode() {
         return Objects.hash(name, surname, course);
-        // Условная альтернатива: return name.length() * 7 + surname.length() * 11 + course * 53;
+        // РЈСЃР»РѕРІРЅР°СЏ Р°Р»СЊС‚РµСЂРЅР°С‚РёРІР°: return name.length() * 7 + surname.length() * 11 + course * 53;
     }
 }
