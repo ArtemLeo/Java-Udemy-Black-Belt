@@ -6,20 +6,20 @@ public class lesson_02 {
     public static void main(String[] args) {
         Stack<String> stack = new Stack<>();
 
-        // push - добавляет элемент в конец Stack;
+        // push - РґРѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ РєРѕРЅРµС† Stack;
         stack.push("Igor");
         stack.push("Anna");
         stack.push("Max");
         System.out.println(stack);
 
-        // pop - удаляет последний элемент Stack;
+        // pop - СѓРґР°Р»СЏРµС‚ РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ Stack;
         System.out.println(stack.pop());
         System.out.println(stack);
 
-        // peek - находит/выводит на экран последний элемент Stack;
+        // peek - РЅР°С…РѕРґРёС‚/РІС‹РІРѕРґРёС‚ РЅР° СЌРєСЂР°РЅ РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ Stack;
         System.out.println(stack.peek());
 
-        // isEmpty - проверка на наличие элементов в Stack;
+        // isEmpty - РїСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ СЌР»РµРјРµРЅС‚РѕРІ РІ Stack;
         while (!stack.isEmpty()){
             stack.pop();
             System.out.println(stack);

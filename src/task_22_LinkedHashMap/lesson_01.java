@@ -6,7 +6,7 @@ import java.util.Objects;
 public class lesson_01 {
     public static void main(String[] args) {
         LinkedHashMap<Double, Student> linkedHashMap = new LinkedHashMap<>(16,0.75f, true);
-        // Access Order - "сортировка" согласно использованию элементов;
+        // Access Order - "СЃРѕСЂС‚РёСЂРѕРІРєР°" СЃРѕРіР»Р°СЃРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЋ СЌР»РµРјРµРЅС‚РѕРІ;
         Student st1 = new Student("Artem", "Surname1", 3);
         Student st2 = new Student("Tom", "Surname2", 2);
         Student st3 = new Student("Anna", "Surname3", 4);

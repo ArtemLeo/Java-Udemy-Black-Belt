@@ -10,12 +10,13 @@ public class lesson_01 {
         hashSet.add("Artem");
         hashSet.add("Anna");
         hashSet.add("Den");
-        //hashSet.add("Den"); Set - не поддерживает дубликаты;
+        //hashSet.add("Den"); Set - РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ РґСѓР±Р»РёРєР°С‚С‹;
         System.out.println(hashSet);
 
         for (String s : hashSet){
             System.out.println(s);
         }
+        
         // remove
         hashSet.remove("Den");
         System.out.println(hashSet);
@@ -26,7 +27,7 @@ public class lesson_01 {
         // isEmpty
         System.out.println(hashSet.isEmpty());
 
-        // contains - поиск элемент (true/false)
+        // contains - РїРѕРёСЃРє СЌР»РµРјРµРЅС‚ (true/false)
         System.out.println(hashSet.contains("Tom"));
     }
 }

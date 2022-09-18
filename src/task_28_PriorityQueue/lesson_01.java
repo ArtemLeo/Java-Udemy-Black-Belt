@@ -11,12 +11,12 @@ public class lesson_01 {
         priorityQueue.add(10);
         priorityQueue.add(8);
         System.out.println(priorityQueue);
-        // Естественная сортировка: 1,4,7,8,10
+        // Р•СЃС‚РµСЃС‚РІРµРЅРЅР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР°: 1,4,7,8,10
 
-        // peek - находит/выводит на экран первый элемент в PriorityQueue. Если элементов нет - ошибку НЕ выбрасывает (null);
+        // peek - РЅР°С…РѕРґРёС‚/РІС‹РІРѕРґРёС‚ РЅР° СЌРєСЂР°РЅ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РІ PriorityQueue. Р•СЃР»Рё СЌР»РµРјРµРЅС‚РѕРІ РЅРµС‚ - РѕС€РёР±РєСѓ РќР• РІС‹Р±СЂР°СЃС‹РІР°РµС‚ (null);
         System.out.println(priorityQueue.peek());
 
-        // remove - удаляется элемент с высшим приоритетом;
+        // remove - СѓРґР°Р»СЏРµС‚СЃСЏ СЌР»РµРјРµРЅС‚ СЃ РІС‹СЃС€РёРј РїСЂРёРѕСЂРёС‚РµС‚РѕРј;
         System.out.println(priorityQueue.remove());
         System.out.println(priorityQueue.remove());
         System.out.println(priorityQueue.remove());

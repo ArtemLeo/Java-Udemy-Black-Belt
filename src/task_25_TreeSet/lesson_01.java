@@ -11,7 +11,7 @@ public class lesson_01 {
         treeSet.add(2);
         treeSet.add(1);
         treeSet.add(10);
-       // treeSet.add(null); treeSet НЕ хранит значения null;
+       // treeSet.add(null); treeSet РќР• С…СЂР°РЅРёС‚ Р·РЅР°С‡РµРЅРёСЏ null;
         System.out.println(treeSet);
 
         // remove
