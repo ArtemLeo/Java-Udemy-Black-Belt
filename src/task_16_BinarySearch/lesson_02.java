@@ -32,7 +32,7 @@ public class lesson_02 {
         int index = Collections.binarySearch(employeeList, new Employee(182, "Anna", 6305));
         System.out.println(index);
 
-        // Поиск в массиве (Arrays.sort + Arrays.binarySearch);
+        // РџРѕРёСЃРє РІ РјР°СЃСЃРёРІРµ (Arrays.sort + Arrays.binarySearch);
         int[] array = {-3, 8, 12, -8, 0, 5, 10, 1, 150, -30, 19};
         System.out.println(Arrays.toString(array));
         Arrays.sort(array);
