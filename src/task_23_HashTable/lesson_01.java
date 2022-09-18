@@ -14,8 +14,7 @@ public class lesson_01 {
         hashtable.put(8.7, st3);
         hashtable.put(7.0, st4);
         System.out.println(hashtable);
-
-        // HashTable - ни ключ, ни значение не могт быть null;
+        // HashTable - РЅРё РєР»СЋС‡, РЅРё Р·РЅР°С‡РµРЅРёРµ РЅРµ РјРѕРіС‚ Р±С‹С‚СЊ null;
     }
 }
 
