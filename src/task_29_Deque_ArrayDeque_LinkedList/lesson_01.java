@@ -35,7 +35,5 @@ public class lesson_01 {
         System.out.println(deque);
         System.out.println(deque.pollLast());
         System.out.println(deque);
-
-
     }
 }
