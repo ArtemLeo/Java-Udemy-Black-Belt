@@ -13,4 +13,3 @@
 <p>▪️ And other important topics</p>
 <img src="images of readme file/1.png" alt="Logo">
 <img src="images of readme file/2.png" alt="Logo">
-<img src="images of readme file/3.png" alt="Logo">
