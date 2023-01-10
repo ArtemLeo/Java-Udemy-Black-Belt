@@ -11,5 +11,5 @@
 <p>▪️ IO and NIO file handling</p>
 <p>▪️ Regular Expressions</p>
 <p>▪️ And other important topics</p>
-<img src="images of readme file/1.png" alt="Logo">
-<img src="images of readme file/2.png" alt="Logo">
+<img src="README images/1.png" alt="Logo">
+<img src="README images/2.png" alt="Logo">
